@@ -1,27 +1,21 @@
-import React, { Component } from "react";
+import React from "react";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import GlobalStyles from "./GlobalStyles";
+import Courses from "../Routes/Categories";
+import Header from "./Header";
+import Careers from "../Routes/Careers";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <GlobalStyles />
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
-
-export default App;
+export default () => (
+  <>
+    <GlobalStyles />
+    <Router>
+      <>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Courses} />
+          <Route path="/careers" component={Careers} />
+        </Switch>
+      </>
+    </Router>
+  </>
+);
