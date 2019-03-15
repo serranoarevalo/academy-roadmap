@@ -48,12 +48,12 @@ const Switch = withRouter(({ location: { pathname } }) => {
   return (
     <SwitchContainer>
       <Card translated={pathname === "/careers"} />
-      <SLink isActive={pathname === "/"}>
-        <Link to="/">Categories</Link>
-      </SLink>
-      <SLink isActive={pathname === "/careers"}>
-        <Link to="/careers">Careers</Link>
-      </SLink>
+      <Link to="/" style={{ textAlign: "center" }}>
+        <SLink isActive={pathname === "/"}>Categories</SLink>
+      </Link>
+      <Link to="/careers" style={{ textAlign: "center" }}>
+        <SLink isActive={pathname === "/careers"}>Careers</SLink>
+      </Link>
     </SwitchContainer>
   );
 });
