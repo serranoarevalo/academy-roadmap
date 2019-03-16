@@ -1,2 +1,2 @@
 import React from "react";
-export default () => <>Careers</>;
+export default () => <>Coming soon!</>;
