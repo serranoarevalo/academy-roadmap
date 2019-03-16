@@ -59,7 +59,7 @@ const Switch = withRouter(({ location: { pathname } }) => {
     <SwitchContainer>
       <Card pathname={pathname} />
       <Link to="/" style={{ textAlign: "center" }}>
-        <SLink isActive={pathname === "/"}>Categories</SLink>
+        <SLink isActive={pathname === "/"}>Courses</SLink>
       </Link>
       <Link to="/clones" style={{ textAlign: "center" }}>
         <SLink isActive={pathname === "/clones"}>🔥 Clones 🔥</SLink>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import styled from "../styled-components";
 
 const Container = styled.div`
@@ -22,12 +22,17 @@ const Courses = styled.div`
 `;
 
 interface IProps {
-  title: string;
+  title?: string;
+  titleComponent?: ReactElement;
 }
 
-const Category: React.SFC<IProps> = ({ title, children }) => (
+const Category: React.FunctionComponent<IProps> = ({
+  title,
+  children,
+  titleComponent
+}) => (
   <Container>
-    <Title>{title}</Title>
+    {titleComponent ? titleComponent : <Title>{title}</Title>}
     <Courses>{children}</Courses>
   </Container>
 );

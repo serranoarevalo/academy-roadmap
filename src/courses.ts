@@ -2,9 +2,10 @@ export interface ICourse {
   title: string;
   description: string;
   link: string | null;
+  required?: boolean;
 }
 
-interface ICourses {
+interface ICategories {
   [key: string]: ICourse[];
 }
 
@@ -16,7 +17,7 @@ const KokoaClone: ICourse = {
 };
 
 const VanillaJS: ICourse = {
-  title: "VanillaJS",
+  title: "Vanilla JS",
   description:
     "자바스크립트 기초 이론을 배우고, 이를 토대로 간단한 시계, 할일 목록 등을 만듭니다.",
   link:
@@ -208,7 +209,7 @@ const ReasonReact: ICourse = {
   link: null
 };
 
-const senior: ICourse[] = [
+const Senior: ICourse[] = [
   PWA,
   Typescript,
   Nuber,
@@ -217,7 +218,7 @@ const senior: ICourse[] = [
   ReasonReact
 ];
 
-const beginner: ICourse[] = [
+const Beginner: ICourse[] = [
   KokoaClone,
   VanillaJS,
   VanillaJSII,
@@ -225,7 +226,7 @@ const beginner: ICourse[] = [
   WetubeBonus
 ];
 
-const junior: ICourse[] = [
+const Junior: ICourse[] = [
   MasteringGit,
   ES6,
   IntroReact,
@@ -245,10 +246,29 @@ const junior: ICourse[] = [
   Instaclone
 ];
 
-const Courses: ICourses = {
-  "01 Beginner": beginner,
-  "02 Junior": junior,
-  "03 Senior": senior
+export const Categories: ICategories = {
+  "01 Beginner": Beginner,
+  "02 Junior": Junior,
+  "03 Senior": Senior
 };
 
-export default Courses;
+interface ITrack {
+  goal: ICourse;
+  requirements: ICourse[];
+}
+
+const WetubeTrack: ITrack = {
+  goal: Wetube,
+  requirements: [
+    { ...KokoaClone, required: true },
+    { ...VanillaJS, required: true }
+  ]
+};
+
+interface ITracks {
+  [key: string]: ITrack;
+}
+
+export const Tracks: ITracks = {
+  Wetube: WetubeTrack
+};

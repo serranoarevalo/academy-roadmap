@@ -2,7 +2,7 @@ import React from "react";
 import styled from "../styled-components";
 import { ICourse } from "../courses";
 
-const Container = styled.div`
+const Container = styled.div<{ required: boolean }>`
   padding: 20px;
   border-radius: 7px;
   background-color: white;
@@ -14,6 +14,7 @@ const Container = styled.div`
   flex-direction: column;
   position: relative;
   font-size: 14px;
+  border: ${props => (props.required ? "2px solid #f1c40f" : "none")};
 `;
 
 const Title = styled.h3`
@@ -49,8 +50,13 @@ const ComingSoon = styled(Link)`
   cursor: not-allowed;
 `;
 
-const Course: React.SFC<ICourse> = ({ title, description, link }) => (
-  <Container>
+const Course: React.FunctionComponent<ICourse> = ({
+  title,
+  description,
+  link,
+  required = false
+}) => (
+  <Container required={required}>
     <Title>{title}</Title>
     <Description>{description}</Description>
     {link ? (
