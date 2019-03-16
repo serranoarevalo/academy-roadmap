@@ -2,7 +2,11 @@ import React from "react";
 import styled from "../styled-components";
 
 const Container = styled.div`
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  &:not(:last-child) {
+    padding-bottom: 120px;
+    border-bottom: 1px solid rgba(112, 123, 142, 0.5);
+  }
 `;
 
 const Title = styled.h3`
@@ -14,7 +18,7 @@ const Title = styled.h3`
 
 const Courses = styled.div`
   display: grid;
-  grid-gap: 40px;
+  grid-gap: 50px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 `;
 

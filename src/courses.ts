@@ -191,7 +191,7 @@ interface ICourses {
 
 const Courses: ICourses = {
   "01 Junior": junior,
-  "02 Rockstar": medium,
+  "02 Middle": medium,
   "03 Senior": advanced
 };
 

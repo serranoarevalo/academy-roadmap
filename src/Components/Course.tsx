@@ -20,11 +20,12 @@ const Title = styled.h3`
   color: ${props => props.theme.blackColor};
   text-transform: uppercase;
   margin-bottom: 20px;
-  font-weight: 500;
+  font-weight: 600;
 `;
 
 const Description = styled.p`
   line-height: 1.3;
+  text-align: left;
 `;
 
 const Link = styled.a`
