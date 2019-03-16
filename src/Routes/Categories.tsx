@@ -7,7 +7,7 @@ import Route from "../Components/Route";
 export default () => (
   <Route
     description={
-      "Here all all the courses we have, by categories, in no specific order."
+      "현재 노마드 아카데미에 있는 모든 강의들을 Beginner, Junior, Senior 난이도별로 정렬한 리스트입니다. "
     }
   >
     {Object.keys(Categories).map((name, index) => (

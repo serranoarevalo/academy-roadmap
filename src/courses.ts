@@ -3,6 +3,7 @@ export interface ICourse {
   description: string;
   link: string | null;
   required?: boolean;
+  recommended?: boolean;
 }
 
 interface ICategories {
@@ -82,7 +83,7 @@ const Styled: ICourse = {
 };
 
 const ReactMemebership: ICourse = {
-  title: "React Membership",
+  title: "🚀 React Membership 🚀",
   description:
     "리액트 JS의 심화 이론을 배우고, 영화 웹서비스를 고도화시키며 프로로 거듭납니다.",
   link: "https://academy.nomadcoders.co/p/react-for-beginners"
@@ -96,7 +97,7 @@ const CSSMaster: ICourse = {
 };
 
 const NativeMembership: ICourse = {
-  title: "React Native Membership",
+  title: "🚀 React Native Membership 🚀",
   description:
     "리액트 네이티브의 심화 이론을 배우고, 영화 앱을 고도화시키며 프로로 거듭납니다.",
   link: "https://academy.nomadcoders.co/p/react-native-for-beginners"
@@ -191,7 +192,7 @@ const Nuber: ICourse = {
 };
 
 const Bitcoin: ICourse = {
-  title: "Bitcoin Clone",
+  title: "🔥 Bitcoin Clone 🔥",
   description:
     "자바스크립트를 활용하여 비트코인을 클론코딩 합니다. P2P, 탈중앙화, 작업증명 등의 이론을 배우고, 이를 통해 비트코인 지갑과 익스플로러를 만듭니다. ",
   link: "https://academy.nomadcoders.co/p/nomad-coin"
@@ -265,10 +266,45 @@ const WetubeTrack: ITrack = {
   ]
 };
 
-interface ITracks {
-  [key: string]: ITrack;
-}
-
-export const Tracks: ITracks = {
-  Wetube: WetubeTrack
+const InstacloneTrack: ITrack = {
+  goal: Instaclone,
+  requirements: [
+    { ...IntroReact, required: true },
+    { ...IntroNative, required: true },
+    { ...Styled, required: true },
+    { ...ReactMemebership, recommended: true },
+    { ...NativeMembership, recommended: true },
+    { ...IntroHooks, required: true },
+    { ...IntroGraph, required: true },
+    { ...IntroApollo, required: true },
+    { ...Offline, recommended: true }
+  ]
 };
+
+const NuberTrack: ITrack = {
+  goal: Nuber,
+  requirements: [
+    { ...IntroReact, required: true },
+    { ...Styled, required: true },
+    { ...ReactMemebership, recommended: true },
+    { ...IntroGraph, required: true },
+    { ...IntroApollo, required: true },
+    { ...Offline, recommended: true },
+    { ...Typescript, required: true }
+  ]
+};
+
+const BitcoinTrack: ITrack = {
+  goal: Bitcoin,
+  requirements: [
+    { ...IntroReact, required: true },
+    { ...Typescript, required: true }
+  ]
+};
+
+export const Tracks: ITrack[] = [
+  WetubeTrack,
+  InstacloneTrack,
+  NuberTrack,
+  BitcoinTrack
+];

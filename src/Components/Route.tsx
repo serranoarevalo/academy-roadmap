@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import styled from "../styled-components";
 
 const Description = styled.p`
@@ -9,12 +9,20 @@ const Description = styled.p`
 `;
 
 interface IProps {
-  description: string;
+  description?: string;
+  descriptionElement?: ReactElement;
 }
 
-const Route: React.SFC<IProps> = ({ description, children }) => (
+const Route: React.FunctionComponent<IProps> = ({
+  description,
+  descriptionElement,
+  children
+}) => (
   <>
-    <Description>{description}</Description>
+    <Description>
+      {description}
+      {descriptionElement}
+    </Description>
     {children}
   </>
 );

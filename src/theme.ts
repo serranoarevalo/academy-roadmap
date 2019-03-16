@@ -4,6 +4,8 @@ export default interface ThemeInterface {
   greyColor: string;
   darkColor: string;
   blackColor: string;
+  blueColor: string;
+  yellowColor: string;
 }
 
 export const theme: ThemeInterface = {
@@ -11,5 +13,7 @@ export const theme: ThemeInterface = {
   purpleColor: "#6772e5",
   greyColor: "#6d7b90",
   blackColor: "#4f566b",
-  darkColor: "#210e6f"
+  darkColor: "#210e6f",
+  blueColor: "#3498db",
+  yellowColor: "#f1c40f"
 };

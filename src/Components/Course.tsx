@@ -2,7 +2,7 @@ import React from "react";
 import styled from "../styled-components";
 import { ICourse } from "../courses";
 
-const Container = styled.div<{ required: boolean }>`
+const Container = styled.div<{ required: boolean; recommended: boolean }>`
   padding: 20px;
   border-radius: 7px;
   background-color: white;
@@ -14,7 +14,15 @@ const Container = styled.div<{ required: boolean }>`
   flex-direction: column;
   position: relative;
   font-size: 14px;
-  border: ${props => (props.required ? "2px solid #f1c40f" : "none")};
+  border: ${props => {
+    if (props.recommended) {
+      return `3px solid ${props.theme.blueColor}`;
+    } else if (props.required) {
+      return `3px solid ${props.theme.yellowColor}`;
+    } else {
+      return "none";
+    }
+  }};
 `;
 
 const Title = styled.h3`
@@ -54,9 +62,10 @@ const Course: React.FunctionComponent<ICourse> = ({
   title,
   description,
   link,
-  required = false
+  required = false,
+  recommended = false
 }) => (
-  <Container required={required}>
+  <Container required={required} recommended={recommended}>
     <Title>{title}</Title>
     <Description>{description}</Description>
     {link ? (
