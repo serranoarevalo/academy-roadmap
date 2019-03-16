@@ -4,8 +4,7 @@ import styled from "../styled-components";
 const Container = styled.div`
   margin-bottom: 100px;
   &:not(:last-child) {
-    padding-bottom: 120px;
-    border-bottom: 1px solid rgba(112, 123, 142, 0.5);
+    padding-bottom: 100px;
   }
 `;
 
@@ -13,7 +12,7 @@ const Title = styled.h3`
   font-weight: 500;
   text-transform: uppercase;
   color: ${props => props.theme.greenColor};
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 `;
 
 const Courses = styled.div`

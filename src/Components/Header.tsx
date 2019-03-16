@@ -18,7 +18,7 @@ const Title = styled.h1`
 
 const SwitchContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 120px);
+  grid-template-columns: repeat(3, 180px);
   grid-gap: 10px;
   margin-top: 20px;
   position: relative;
@@ -34,27 +34,38 @@ const SLink = styled.span<{ isActive: boolean }>`
   transition: color 0.3s linear;
 `;
 
-const Card = styled.div<{ translated: boolean }>`
+const Card = styled.div<{ pathname: string }>`
   position: absolute;
   top: -7px;
   background-color: white;
-  width: 120px;
+  width: 180px;
   height: 30px;
   box-shadow: 0 2px 4px rgba(50, 50, 93, 0.1);
   border-radius: 3px;
-  transform: ${props => (props.translated ? "translateX(130px)" : "none")};
+  transform: ${props => {
+    if (props.pathname === "/") {
+      return "none";
+    } else if (props.pathname === "/clones") {
+      return "translateX(188px)";
+    } else if (props.pathname === "/memberships") {
+      return "translateX(377.5px)";
+    }
+  }};
   transition: transform 0.2s ease-in-out;
 `;
 
 const Switch = withRouter(({ location: { pathname } }) => {
   return (
     <SwitchContainer>
-      <Card translated={pathname === "/careers"} />
+      <Card pathname={pathname} />
       <Link to="/" style={{ textAlign: "center" }}>
         <SLink isActive={pathname === "/"}>Categories</SLink>
       </Link>
-      <Link to="/careers" style={{ textAlign: "center" }}>
-        <SLink isActive={pathname === "/careers"}>🔥 Careers 🔥</SLink>
+      <Link to="/clones" style={{ textAlign: "center" }}>
+        <SLink isActive={pathname === "/clones"}>🔥 Clones 🔥</SLink>
+      </Link>
+      <Link to="/memberships" style={{ textAlign: "center" }}>
+        <SLink isActive={pathname === "/memberships"}>🚀 Memberships 🚀</SLink>
       </Link>
     </SwitchContainer>
   );
