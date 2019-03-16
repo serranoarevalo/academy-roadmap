@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
         background-color:#F7F9FC;
         color:${props => props.theme.blackColor}; 
         font-size:16px;
-        padding:30px;
+        padding:30px 80px;
     }
     a {
         color:inherit;

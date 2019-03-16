@@ -7,6 +7,7 @@ const Header = styled.header`
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 80px;
 `;
 
 const Title = styled.h1`
@@ -19,6 +20,7 @@ const SwitchContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 120px);
   grid-gap: 10px;
+  margin-top: 20px;
   position: relative;
 `;
 
@@ -52,7 +54,7 @@ const Switch = withRouter(({ location: { pathname } }) => {
         <SLink isActive={pathname === "/"}>Categories</SLink>
       </Link>
       <Link to="/careers" style={{ textAlign: "center" }}>
-        <SLink isActive={pathname === "/careers"}>Careers</SLink>
+        <SLink isActive={pathname === "/careers"}>🔥 Careers 🔥</SLink>
       </Link>
     </SwitchContainer>
   );
@@ -61,7 +63,7 @@ const Switch = withRouter(({ location: { pathname } }) => {
 export default () => (
   <Header>
     <Logo width="50" />
-    <Title>Roadmap</Title>
+    <Title>Course Roadmap</Title>
     <Switch />
   </Header>
 );
