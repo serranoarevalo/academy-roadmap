@@ -230,11 +230,11 @@ const Beginner: ICourse[] = [
 const Junior: ICourse[] = [
   MasteringGit,
   ES6,
+  CSSMaster,
   IntroReact,
   IntroNative,
   Styled,
   ReactMemebership,
-  CSSMaster,
   NativeMembership,
   Kawai,
   Redux,
@@ -307,4 +307,38 @@ export const Tracks: ITrack[] = [
   InstacloneTrack,
   NuberTrack,
   BitcoinTrack
+];
+
+export interface ISection {
+  released: boolean;
+  name: string;
+}
+
+interface IMembership {
+  class: ICourse;
+  sections: ISection[];
+}
+
+export const Memberships: IMembership[] = [
+  {
+    class: ReactMemebership,
+    sections: [
+      { released: true, name: "Build a Movie App" },
+      { released: false, name: "Typescript + React" },
+      { released: false, name: "Hooks: Deep Dive" },
+      { released: false, name: "Learn Gatsby" },
+      { released: false, name: "Data Visualization with React and D3" }
+    ]
+  },
+  {
+    class: NativeMembership,
+    sections: [
+      { released: true, name: "Build an iOS / Android Movie App" },
+      { released: false, name: "Submit to Appstore and Google Play" },
+      {
+        released: false,
+        name: "Smilecam: Build a Selfie App with Face Detection"
+      }
+    ]
+  }
 ];

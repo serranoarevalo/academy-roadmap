@@ -17,6 +17,7 @@ const Title = styled.h3`
 `;
 
 const Description = styled.div`
+  font-size: 14px;
   margin-bottom: 20px;
 `;
 
