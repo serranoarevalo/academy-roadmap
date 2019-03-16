@@ -16,24 +16,6 @@ const Title = styled.h1`
   margin: 20px 0px;
 `;
 
-const SwitchContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 180px);
-  grid-gap: 10px;
-  margin-top: 20px;
-  position: relative;
-`;
-
-const SLink = styled.span<{ isActive: boolean }>`
-  text-align: center;
-  position: relative;
-  cursor: pointer;
-  font-weight: 500;
-  color: ${props =>
-    props.isActive ? props.theme.greenColor : props.theme.purpleColor};
-  transition: color 0.3s linear;
-`;
-
 const Card = styled.div<{ pathname: string }>`
   position: absolute;
   top: -7px;
@@ -52,6 +34,34 @@ const Card = styled.div<{ pathname: string }>`
     }
   }};
   transition: transform 0.2s ease-in-out;
+`;
+
+const SLink = styled.span<{ isActive: boolean }>`
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+  color: ${props =>
+    props.isActive ? props.theme.greenColor : props.theme.purpleColor};
+  transition: color 0.3s linear;
+`;
+
+const SwitchContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 180px);
+  grid-gap: 10px;
+  margin-top: 20px;
+  position: relative;
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    ${Card} {
+      display: none;
+    }
+    a {
+      margin-bottom: 20px;
+    }
+  }
 `;
 
 const Switch = withRouter(({ location: { pathname } }) => {

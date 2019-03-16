@@ -1,11 +1,14 @@
 import React, { ReactElement } from "react";
 import styled from "../styled-components";
 
+const Container = styled.div`
+  margin-bottom: 80px;
+  font-size: 14px;
+`;
+
 const Description = styled.p`
   text-align: center;
   width: 100%;
-  margin-bottom: 80px;
-  font-size: 14px;
 `;
 
 interface IProps {
@@ -19,10 +22,10 @@ const Route: React.FunctionComponent<IProps> = ({
   children
 }) => (
   <>
-    <Description>
-      {description}
+    <Container>
+      <Description>{description}</Description>
       {descriptionElement}
-    </Description>
+    </Container>
     {children}
   </>
 );
