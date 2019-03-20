@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/academy-roadmap/static/media/Logo.d57d87b5.svg"
   },
   {
-    "revision": "99efdb414b555d802e3f86eb9a2e8705",
+    "revision": "cf15df6360091d76d2f86118c847aaa1",
     "url": "/academy-roadmap/index.html"
   }
 ];
