@@ -324,7 +324,7 @@ export const Memberships: IMembership[] = [
     class: ReactMemebership,
     sections: [
       { released: true, name: "Build a Movie App" },
-      { released: false, name: "Typescript + React" },
+      { released: true, name: "Typescript + React" },
       { released: false, name: "Hooks: Deep Dive" },
       { released: false, name: "Learn Gatsby" },
       { released: false, name: "Data Visualization with React and D3" }
@@ -334,11 +334,11 @@ export const Memberships: IMembership[] = [
     class: NativeMembership,
     sections: [
       { released: true, name: "Build an iOS / Android Movie App" },
-      { released: false, name: "Submit to Appstore and Google Play" },
       {
-        released: false,
+        released: true,
         name: "Smilecam: Build a Selfie App with Face Detection"
-      }
+      },
+      { released: false, name: "Make a Game in React Native and WebGL" }
     ]
   }
 ];
