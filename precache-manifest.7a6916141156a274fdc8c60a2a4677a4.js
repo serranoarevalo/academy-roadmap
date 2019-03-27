@@ -1,22 +1,22 @@
 self.__precacheManifest = [
   {
-    "revision": "993d8001842f23bb860f",
-    "url": "/academy-roadmap/static/js/main.68e02c8d.chunk.js"
+    "revision": "f4a6429db8255887d3ef",
+    "url": "/academy-roadmap/static/js/main.449d074b.chunk.js"
   },
   {
     "revision": "72a8c2d61451575eee14",
     "url": "/academy-roadmap/static/js/runtime~main.2d67f0ff.js"
   },
   {
-    "revision": "baeb215c47ec50d52e68",
-    "url": "/academy-roadmap/static/js/2.d03d074e.chunk.js"
+    "revision": "9a03b2932ea6d66a6520",
+    "url": "/academy-roadmap/static/js/2.7ae05619.chunk.js"
   },
   {
     "revision": "d57d87b5c98bfcb66893b5d1d75e8f58",
     "url": "/academy-roadmap/static/media/Logo.d57d87b5.svg"
   },
   {
-    "revision": "06e90ea8003b996ff5a4880e0e9859cc",
+    "revision": "d546345a4d84ab76466d8fe96a9e471d",
     "url": "/academy-roadmap/index.html"
   }
 ];
