@@ -5,6 +5,7 @@ import Courses from "../Routes/Categories";
 import Header from "./Header";
 import Clones from "../Routes/Clones";
 import Memberships from "../Routes/Memberships";
+import Statistics from "../Routes/Statistics";
 
 export default () => (
   <>
@@ -16,6 +17,7 @@ export default () => (
           <Route exact path="/" component={Courses} />
           <Route path="/clones" component={Clones} />
           <Route path="/memberships" component={Memberships} />
+          <Route path="/stats" component={Statistics} />
         </Switch>
       </>
     </Router>

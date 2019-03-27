@@ -30,7 +30,9 @@ const Card = styled.div<{ pathname: string }>`
     } else if (props.pathname === "/clones") {
       return "translateX(188px)";
     } else if (props.pathname === "/memberships") {
-      return "translateX(377.5px)";
+      return "translateX(378px)";
+    } else if (props.pathname === "/stats") {
+      return "translateX(570px)";
     }
   }};
   transition: transform 0.2s ease-in-out;
@@ -48,7 +50,7 @@ const SLink = styled.span<{ isActive: boolean }>`
 
 const SwitchContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 180px);
+  grid-template-columns: repeat(4, 180px);
   grid-gap: 10px;
   margin-top: 20px;
   position: relative;
@@ -76,6 +78,9 @@ const Switch = withRouter(({ location: { pathname } }) => {
       </Link>
       <Link to="/memberships" style={{ textAlign: "center" }}>
         <SLink isActive={pathname === "/memberships"}>🚀 Memberships 🚀</SLink>
+      </Link>
+      <Link to="/stats" style={{ textAlign: "center" }}>
+        <SLink isActive={pathname === "/stats"}>Statistics</SLink>
       </Link>
     </SwitchContainer>
   );

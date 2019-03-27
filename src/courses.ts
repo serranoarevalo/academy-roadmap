@@ -200,7 +200,7 @@ const Bitcoin: ICourse = {
 
 const ReasonIntro: ICourse = {
   title: "Intro to ReasonML",
-  description: "페이스북이 만든, ReazonML의 기초 이론을 배웁니다.",
+  description: "페이스북이 만든, ReasonML의 기초 이론을 배웁니다.",
   link: null
 };
 
@@ -208,6 +208,12 @@ const ReasonReact: ICourse = {
   title: "Intro to Reason React",
   description: "ReasonML을 활용하여 Functional 리액트 앱을 만듭니다.",
   link: null
+};
+
+const React16: ICourse = {
+  title: "Master React 16",
+  description: "리액트 16의 새로운 기능을 배우세요",
+  link: "https://academy.nomadcoders.co/p/mastering-react-16"
 };
 
 const Senior: ICourse[] = [
@@ -240,6 +246,7 @@ const Junior: ICourse[] = [
   Redux,
   AntiRedux,
   Parcel,
+  React16,
   IntroHooks,
   IntroGraph,
   IntroApollo,

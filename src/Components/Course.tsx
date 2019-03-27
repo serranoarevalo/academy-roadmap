@@ -6,7 +6,6 @@ const Container = styled.div<{ required: boolean; recommended: boolean }>`
   padding: 20px;
   border-radius: 7px;
   background-color: white;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   min-height: 150px;
   text-align: center;
   color: ${props => props.theme.greyColor};
@@ -23,6 +22,14 @@ const Container = styled.div<{ required: boolean; recommended: boolean }>`
       return "none";
     }
   }};
+  transition-property: box-shadow, transform;
+  transition-duration: 0.15s;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 15px 35px 0 rgba(23, 55, 87, 0.1),
+      0 5px 15px 0 rgba(0, 0, 0, 0.07);
+    transform: translateY(-2px);
+  }
 `;
 
 const Title = styled.h3`
