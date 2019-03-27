@@ -17,7 +17,7 @@ const Container = styled.div`
 
 const Number = styled.span`
   font-size: 62px;
-  font-variant-numeric: normal;
+  font-variant-numeric: tabular-nums;
 `;
 
 const Text = styled.span`

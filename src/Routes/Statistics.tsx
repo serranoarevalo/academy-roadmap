@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Route from "../Components/Route";
 import NumberCounter from "../Components/NumberCounter";
 import CountryCounter from "../Components/CountryCounter";
+import { RockStarTrack } from "../courses";
+import Course from "../Components/Course";
 
 const Container = styled.div`
   display: flex;
@@ -32,7 +34,18 @@ const CoursesContainer = styled.div`
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 `;
 
-const CoursesTitle = styled.span``;
+const RockstarTitle = styled.span`
+  margin-top: 30px;
+  font-size: 32px;
+`;
+
+const RockstarContainer = styled.div`
+  margin: 100px 0px;
+  display: grid;
+  width: 50%;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 50px;
+`;
 
 export default () => (
   <Route
@@ -46,8 +59,14 @@ export default () => (
         <CountryCounter />
       </NumbersContainer>
       <CoursesContainer>
-        <CoursesTitle>22 Courses. 66% of them for FREE</CoursesTitle>
+        <span>22 Courses. 66% of them for FREE</span>
       </CoursesContainer>
+      <RockstarTitle>Top 3 Rockstar Courses:</RockstarTitle>
+      <RockstarContainer>
+        {RockStarTrack.map((course, index) => (
+          <Course key={index} {...course} />
+        ))}
+      </RockstarContainer>
     </Container>
   </Route>
 );

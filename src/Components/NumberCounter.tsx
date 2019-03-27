@@ -18,7 +18,7 @@ const Container = styled.div`
 
 const Number = styled.span`
   font-size: 62px;
-  font-variant-numeric: normal;
+  font-variant-numeric: tabular-nums;
 `;
 
 const Text = styled.span`
@@ -46,7 +46,7 @@ const NumberCounter: React.FunctionComponent<IProps> = ({ baseNumber }) => {
 
   const startCount = () => {
     if (current <= target) {
-      setTimeout(() => setCurrent(current + 1), 50);
+      setTimeout(() => setCurrent(current + 1), 5);
     } else {
       return;
     }

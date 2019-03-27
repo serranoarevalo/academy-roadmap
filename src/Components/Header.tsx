@@ -30,7 +30,7 @@ const Card = styled.div<{ pathname: string }>`
     } else if (props.pathname === "/clones") {
       return "translateX(188px)";
     } else if (props.pathname === "/memberships") {
-      return "translateX(378px)";
+      return "translateX(380px)";
     } else if (props.pathname === "/stats") {
       return "translateX(570px)";
     }
@@ -74,10 +74,10 @@ const Switch = withRouter(({ location: { pathname } }) => {
         <SLink isActive={pathname === "/"}>Courses</SLink>
       </Link>
       <Link to="/clones" style={{ textAlign: "center" }}>
-        <SLink isActive={pathname === "/clones"}>🔥 Clones 🔥</SLink>
+        <SLink isActive={pathname === "/clones"}>Clones</SLink>
       </Link>
       <Link to="/memberships" style={{ textAlign: "center" }}>
-        <SLink isActive={pathname === "/memberships"}>🚀 Memberships 🚀</SLink>
+        <SLink isActive={pathname === "/memberships"}>Memberships</SLink>
       </Link>
       <Link to="/stats" style={{ textAlign: "center" }}>
         <SLink isActive={pathname === "/stats"}>Statistics</SLink>

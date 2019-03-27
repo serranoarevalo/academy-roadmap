@@ -72,17 +72,19 @@ const Course: React.FunctionComponent<ICourse> = ({
   required = false,
   recommended = false
 }) => (
-  <Container required={required} recommended={recommended}>
-    <Title>{title}</Title>
-    <Description>{description}</Description>
-    {link ? (
-      <Link href={link} target="_blank">
-        Go to course
-      </Link>
-    ) : (
-      <ComingSoon>Coming Soon</ComingSoon>
-    )}
-  </Container>
+  <a href={link!} target="_blank">
+    <Container required={required} recommended={recommended}>
+      <Title>{title}</Title>
+      <Description>{description}</Description>
+      {link ? (
+        <Link href={link} target="_blank">
+          Go to course
+        </Link>
+      ) : (
+        <ComingSoon>Coming Soon</ComingSoon>
+      )}
+    </Container>
+  </a>
 );
 
 export default Course;

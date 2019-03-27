@@ -33,7 +33,7 @@ const VanillaJSII: ICourse = {
 };
 
 const Wetube: ICourse = {
-  title: "🔥 Wetube 🔥",
+  title: "Wetube",
   description:
     "유튜브를 클론코딩 합니다. 자바스크립트. NodeJS, Express, Users, 페이스북 로그인 등 유용한 실전 기술을 배우고, 활용합니다.",
   link:
@@ -83,7 +83,7 @@ const Styled: ICourse = {
 };
 
 const ReactMemebership: ICourse = {
-  title: "🚀 React Membership 🚀",
+  title: "React Membership",
   description:
     "리액트 JS의 심화 이론을 배우고, 영화 웹서비스를 고도화시키며 프로로 거듭납니다.",
   link: "https://academy.nomadcoders.co/p/react-for-beginners"
@@ -97,7 +97,7 @@ const CSSMaster: ICourse = {
 };
 
 const NativeMembership: ICourse = {
-  title: "🚀 React Native Membership 🚀",
+  title: "React Native Membership",
   description:
     "리액트 네이티브의 심화 이론을 배우고, 영화 앱을 고도화시키며 프로로 거듭납니다.",
   link: "https://academy.nomadcoders.co/p/react-native-for-beginners"
@@ -164,7 +164,7 @@ const Offline: ICourse = {
 };
 
 const Instaclone = {
-  title: "🔥 Instaclone 2.0 🔥",
+  title: "Instaclone 2.0",
   description:
     "인스타그램을 클론코딩 합니다. 프론트엔드, 백엔드 뿐만 아니라 iOS/Android 앱까지 전체 완성합니다.",
   link: "https://academy.nomadcoders.co/p/instaclone-2-0"
@@ -184,7 +184,7 @@ const Typescript: ICourse = {
 };
 
 const Nuber: ICourse = {
-  title: "🔥 nUber Clone 🔥",
+  title: "nUber one",
   description:
     "우버를 클론코딩 합니다. 그래프큐엘, 타입스크립트, TypeORM, 구글맵 그리고 아폴로를 배우고, 활용합니다.",
   link:
@@ -192,7 +192,7 @@ const Nuber: ICourse = {
 };
 
 const Bitcoin: ICourse = {
-  title: "🔥 Bitcoin Clone 🔥",
+  title: "Bitcoin Clone",
   description:
     "자바스크립트를 활용하여 비트코인을 클론코딩 합니다. P2P, 탈중앙화, 작업증명 등의 이론을 배우고, 이를 통해 비트코인 지갑과 익스플로러를 만듭니다. ",
   link: "https://academy.nomadcoders.co/p/nomad-coin"
@@ -349,3 +349,5 @@ export const Memberships: IMembership[] = [
     ]
   }
 ];
+
+export const RockStarTrack: ICourse[] = [IntroReact, VanillaJS, Instaclone];
