@@ -24,12 +24,12 @@ const NumbersContainer = styled.div`
 const CoursesContainer = styled.div`
   width: 50%;
   margin: 100px auto;
-  padding: 30px;
+  padding: 20px;
   border-radius: 90px;
   text-align: center;
   color: white;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 18px;
   background-image: linear-gradient(to right, #c644fc, #5856d6);
   box-shadow: inset 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
