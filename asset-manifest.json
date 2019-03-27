@@ -1,12 +1,12 @@
 {
-  "main.js": "/academy-roadmap/static/js/main.3af5577e.chunk.js",
-  "main.js.map": "/academy-roadmap/static/js/main.3af5577e.chunk.js.map",
+  "main.js": "/academy-roadmap/static/js/main.68e02c8d.chunk.js",
+  "main.js.map": "/academy-roadmap/static/js/main.68e02c8d.chunk.js.map",
   "runtime~main.js": "/academy-roadmap/static/js/runtime~main.2d67f0ff.js",
   "runtime~main.js.map": "/academy-roadmap/static/js/runtime~main.2d67f0ff.js.map",
   "static/js/2.d03d074e.chunk.js": "/academy-roadmap/static/js/2.d03d074e.chunk.js",
   "static/js/2.d03d074e.chunk.js.map": "/academy-roadmap/static/js/2.d03d074e.chunk.js.map",
   "index.html": "/academy-roadmap/index.html",
-  "precache-manifest.65a6f07d770b45fe38cd69fc58eea3c3.js": "/academy-roadmap/precache-manifest.65a6f07d770b45fe38cd69fc58eea3c3.js",
+  "precache-manifest.295a5e022927fffdfea7737e773785cc.js": "/academy-roadmap/precache-manifest.295a5e022927fffdfea7737e773785cc.js",
   "service-worker.js": "/academy-roadmap/service-worker.js",
   "static/media/Logo.d57d87b5.svg": "/academy-roadmap/static/media/Logo.d57d87b5.svg"
 }
