@@ -47,7 +47,7 @@ const NumberCounter: React.FunctionComponent<IProps> = ({ baseNumber }) => {
 
   const startCount = () => {
     if (current <= target) {
-      setTimeout(() => setCurrent(current + 1), 5);
+      setCurrent(current + 1);
     } else {
       return;
     }

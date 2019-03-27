@@ -44,7 +44,7 @@ const Description = styled.p`
   text-align: left;
 `;
 
-const Link = styled.a`
+const Link = styled.span`
   position: absolute;
   bottom: -10px;
   cursor: pointer;
@@ -76,13 +76,7 @@ const Course: React.FunctionComponent<ICourse> = ({
     <Container required={required} recommended={recommended}>
       <Title>{title}</Title>
       <Description>{description}</Description>
-      {link ? (
-        <Link href={link} target="_blank">
-          Go to course
-        </Link>
-      ) : (
-        <ComingSoon>Coming Soon</ComingSoon>
-      )}
+      {link ? <Link>Go to course</Link> : <ComingSoon>Coming Soon</ComingSoon>}
     </Container>
   </a>
 );

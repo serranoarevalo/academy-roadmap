@@ -11,6 +11,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
+  margin-bottom: 100px;
 `;
 
 const NumbersContainer = styled.div`
@@ -23,12 +24,12 @@ const NumbersContainer = styled.div`
 const CoursesContainer = styled.div`
   width: 50%;
   margin: 100px auto;
-  padding: 50px;
+  padding: 30px;
   border-radius: 90px;
   text-align: center;
   color: white;
   font-weight: 300;
-  font-size: 26px;
+  font-size: 22px;
   background-image: linear-gradient(to right, #c644fc, #5856d6);
   box-shadow: inset 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
@@ -65,7 +66,7 @@ const MetterCard = styled.div`
   border-radius: 11px;
   display: grid;
   grid-template-columns: 1.4fr 6.8fr 1.8fr;
-  background-image: linear-gradient(to bottom, #ff9500, #ff5e3a);
+  background-image: linear-gradient(to left, #ff5e3a, #ff2a68);
   & ${MetterSegment} {
     &:first-child {
     }
@@ -80,8 +81,10 @@ const MetterCard = styled.div`
 
 const MetterTitle = styled.span`
   font-size: 28px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 `;
+
+const DataSection = styled.div``;
 
 export default () => (
   <Route
@@ -103,7 +106,7 @@ export default () => (
           <Course key={index} {...course} />
         ))}
       </RockstarContainer>
-      <MetterTitle>Most courses are for Juniors</MetterTitle>
+      <MetterTitle>Most courses are for Junior programmers!</MetterTitle>
       <MetterCard>
         <MetterSegment>Beginner 14%</MetterSegment>
         <MetterSegment>Junior 68%</MetterSegment>
