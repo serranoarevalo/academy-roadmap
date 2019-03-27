@@ -27,6 +27,7 @@ const Text = styled.span`
   font-size: 15px;
   text-transform: uppercase;
   font-size: 12px;
+  font-weight: 300;
 `;
 
 interface IProps {

@@ -45,6 +45,42 @@ const RockstarContainer = styled.div`
   width: 50%;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   grid-gap: 50px;
+  margin-bottom: 150px;
+`;
+
+const MetterSegment = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+`;
+
+const MetterCard = styled.div`
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  background-color: white;
+  overflow: hidden;
+  width: 50%;
+  height: 80px;
+  border-radius: 11px;
+  display: grid;
+  grid-template-columns: 1.4fr 6.8fr 1.8fr;
+  background-image: linear-gradient(to bottom, #ff9500, #ff5e3a);
+  & ${MetterSegment} {
+    &:first-child {
+    }
+    &:nth-child(2) {
+      border-left: 2px solid white;
+      border-right: 2px solid white;
+    }
+    &:last-child {
+    }
+  }
+`;
+
+const MetterTitle = styled.span`
+  font-size: 28px;
+  margin-bottom: 30px;
 `;
 
 export default () => (
@@ -67,6 +103,12 @@ export default () => (
           <Course key={index} {...course} />
         ))}
       </RockstarContainer>
+      <MetterTitle>Most courses are for Juniors</MetterTitle>
+      <MetterCard>
+        <MetterSegment>Beginner 14%</MetterSegment>
+        <MetterSegment>Junior 68%</MetterSegment>
+        <MetterSegment>Advanced 18%</MetterSegment>
+      </MetterCard>
     </Container>
   </Route>
 );

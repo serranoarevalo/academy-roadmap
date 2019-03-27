@@ -26,7 +26,7 @@ const Text = styled.span`
   font-size: 15px;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 300;
 `;
 
 const CountryCounter: React.FunctionComponent = () => {
