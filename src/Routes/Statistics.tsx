@@ -98,7 +98,7 @@ export default () => (
         <CountryCounter />
       </NumbersContainer>
       <CoursesContainer>
-        <span>22 Courses. 66% of them for FREE</span>
+        <span>현재 총 22개 강의를 제공하며, 그 중 66%는 무료 강의 입니다.</span>
       </CoursesContainer>
       <RockstarTitle>Top 3 Rockstar Courses:</RockstarTitle>
       <RockstarContainer>
