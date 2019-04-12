@@ -29,7 +29,7 @@ const VanillaJSII: ICourse = {
   title: "Vanilla JS II",
   description:
     "자바스크립트 2D 그래픽 기초 이론을 배우고, 이를 토대로 간단한 그림판을 만듭니다.",
-  link: null
+  link: "https://academy.nomadcoders.co/p/vanilla-js-part-two-kr?ref=map"
 };
 
 const Wetube: ICourse = {
@@ -37,7 +37,7 @@ const Wetube: ICourse = {
   description:
     "유튜브를 클론코딩 합니다. 자바스크립트. NodeJS, Express, Users, 페이스북 로그인 등 유용한 실전 기술을 배우고, 활용합니다.",
   link:
-    "https://academy.nomadcoders.co/p/javascript-fullstack-from-zero-to-hero/?ref=map"
+    "https://academy.nomadcoders.co/p/javascript-fullstack-from-zero-to-hero?ref=map"
 };
 
 const WetubeBonus: ICourse = {
