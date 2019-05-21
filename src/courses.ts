@@ -44,7 +44,7 @@ const WetubeBonus: ICourse = {
   title: "Wetube Bonus",
   description:
     "SocketIO 를 배우고, 이를 토대로 리얼타임 협업 드로잉 툴을 만듭니다.",
-  link: null
+  link: "https://academy.nomadcoders.co/p/websocket-realtime-multiplayer-game/"
 };
 
 const MasteringGit: ICourse = {
@@ -139,7 +139,7 @@ const IntroHooks: ICourse = {
   title: "Intro to Hooks",
   description:
     "리액트 Hooks의 기초 이론을 배우고, 더 깔끔한 코드를 갖춘 프로 리액트 개발자가 됩니다.",
-  link: null
+  link: "https://academy.nomadcoders.co/p/introduction-to-react-hooks"
 };
 
 const IntroGraph: ICourse = {
