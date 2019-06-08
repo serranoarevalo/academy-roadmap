@@ -58,7 +58,7 @@ const ES6: ICourse = {
   title: "ES6 once and for all",
   description:
     "ES6, ES7, ES8 을 배우면서 자바스크립트 기술을 더 고도화시킵니다. 특히 ES6의 어메이징한 활용법을 배웁니다.",
-  link: null
+  link: "https://academy.nomadcoders.co/p/es6-once-and-for-all/"
 };
 
 const IntroReact: ICourse = {
